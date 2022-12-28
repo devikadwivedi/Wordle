@@ -1,0 +1,69 @@
+h1 {
+  font-size: 40pt;
+  text-align: center;
+}
+
+.guess {
+  display: flex;
+
+}
+
+#board, #keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border : 10px solid #121213;
+}
+
+
+.box {
+  width: 70px;
+  height: 70px;
+  line-height: 50pt;
+  font-size: 45px;
+  text-align: center;
+  border: 3px solid #3a3a3c;
+  margin : 5px;
+}
+
+p {
+  font-size: 25pt;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  justify-content: center;
+  color : white;
+  padding : 20px;
+  border-radius: 10px;
+  background-color: #818384;
+  font-size: 25px;
+}
+
+body {
+  background-color: #121213;
+  color : white
+}
+
+.newText {
+  border: 3px solid #818384;
+}
+
+.correct {
+  background-color : #538d4e;
+  border-color: #538d4e;
+}
+
+.incorrect {
+  background-color: #3a3a3c;
+}
+
+.semicorrect {
+  background-color : #b59f3b;
+  border-color: #b59f3b;
+}
