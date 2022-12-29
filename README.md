@@ -1,3 +1,3 @@
 # Wordle
 
-this is a change
+Use the site here: https://devikadwivedi.github.io/Wordle/
