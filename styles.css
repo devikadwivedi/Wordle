@@ -47,7 +47,8 @@ button {
 
 body {
   background-color: #121213;
-  color : white
+  color : white;
+  touch-action: manipulation;
 }
 
 .newText {

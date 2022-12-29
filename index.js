@@ -2,7 +2,6 @@
 
 (function() {
   window.addEventListener("load", init);
-  const URL = "https://markbyrne.us/wordle-dictionary-api";
   let currLetter = 0;
   let answer = "FOCUS";
   let guessNum = 1;
@@ -32,29 +31,9 @@
     if (guess.length < 5) {
       console.log("not enough letters");
     } else {
-      //requestWordValidation(guess);
       console.log(guess);
       validateGuess(guess);
     }
-  }
-
-  function requestWordValidation(guess) {
-    fetch(URL + "/" + guess)
-      .then(statusCheck)
-      .then(resp => resp.json())
-      .then(processData, guess)
-      .catch(handleError);
-  }
-
-  function processData(responseData, guess) {
-    responseData.forEach(element => {
-      if (responseData === guess.toLowerCase()) {
-        console.log("word has been validated.");
-        return;
-      }
-      console.log("word does not exist");
-  });
-
   }
 
   /**
