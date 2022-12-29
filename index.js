@@ -6,6 +6,10 @@
   let answer = "FOCUS";
   let guessNum = 1;
 
+  document.ondblclick = function(e) {
+    e.preventDefault();
+  }
+
   function init() {
     initButtons();
   }
