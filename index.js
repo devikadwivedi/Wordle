@@ -3,7 +3,7 @@
 (function() {
   window.addEventListener("load", init);
   let currLetter = 0;
-  let answer = "FOCUS";
+  let answer = "STARK";
   let guessNum = 1;
 
 
